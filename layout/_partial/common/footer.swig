@@ -8,10 +8,12 @@
                 <div class="item__content">
                     <p class="item__text">{{ about.info }}</p>
                     <ul class="footer__contact-info">
+			<!--
                         <li class="contact-info__item">
                             <i class="iconfont icon-address"></i>
                             <span>{{ about.address }}</span>
                         </li>
+			-->
                         <li class="contact-info__item">
                             <i class="iconfont icon-email2"></i>
                             <span>{{ about.email }}</span>
@@ -48,9 +50,9 @@
     </section>
     <section class="footer__bottom">
         <div class="page__container footer__container">
-            <p class="footer__copyright">©
-                <a href="https://github.com/Mrminfive/hexo-theme-skapp" target="_blank">Skapp</a> 2017 powered by
-                <a href="http://hexo.io/" target="_blank">Hexo</a>, made by 
+            <p class="footer__copyright">
+		Powered by
+                <a href="http://hexo.io/" target="_blank">Hexo</a>, theme by 
                 <a href="https://github.com/Mrminfive" target="_blank">minfive</a>.
             </p>
             <ul class="footer__social-network clearfix">
