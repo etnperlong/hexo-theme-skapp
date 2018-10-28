@@ -20,21 +20,18 @@
     </script>
 {% endif %}
 
-{% if page.comments && config.disqus_shortname %}
+{% if page.comments && config.disqus %}
+    <link rel="stylesheet" href="/css/iDisqus.min.css" />
+    <script src="/js/iDisqus.min.js"></script>
     <script>
-        var disqus_shortname = '{{ config.disqus_shortname }}';
-        var disqus_config = function () {
-            this.page.url = '{{ config.url }}/{{ page.path }}';
-            this.page.identifier = '/{{ page.path }}';
-            this.page.title = '{{ page.title }}';
-        };
-
-        (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-        (d.head || d.body).appendChild(s);
-        })();
+    var disq = new iDisqus('disqus_thread', {
+        forum: '{{ config.disqus.forum }}',
+        api: '{{ config.disqus.api }}',
+        site: '{{ config.url }}',
+        mode: 1,
+        timeout: 3000,
+        init: true
+    });
     </script>
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 {% endif %}
