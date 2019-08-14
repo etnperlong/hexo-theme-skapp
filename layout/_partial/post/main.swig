@@ -5,7 +5,7 @@
         {% if page.comments && config.gitTalk %}
             <div id="comment-container"></div>
         {% endif %}
-        {% if page.comments && config.disqus_shortname %}
+        {% if page.comments && config.disqus %}
             <div id="disqus_thread"></div>
         {% endif %}
     </div>
