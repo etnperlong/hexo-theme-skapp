@@ -5,8 +5,8 @@
         {% if page.comments && config.gitTalk %}
             <div id="comment-container"></div>
         {% endif %}
-        {% if page.comments && config.disqus %}
-            <div id="disqus_thread"></div>
+        {% if page.comments && config.livere.uid %}
+			<div id="lv-container" data-id="city" data-uid="{{ config.livere.uid }}"></div>
         {% endif %}
     </div>
 

@@ -20,18 +20,19 @@
     </script>
 {% endif %}
 
-{% if page.comments && config.disqus %}
-    <link rel="stylesheet" href="/css/iDisqus.min.css" />
-    <script src="/js/iDisqus.min.js"></script>
-    <script>
-    var disq = new iDisqus('disqus_thread', {
-        forum: '{{ config.disqus.forum }}',
-        api: '{{ config.disqus.api }}',
-        site: '{{ config.url }}',
-        mode: 1,
-        timeout: 3000,
-        init: true
-    });
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+{% if page.comments && config.livere.uid %}
+	<script type="text/javascript">
+		(function(d, s) {
+			var j, e = d.getElementsByTagName(s)[0];
+
+			if (typeof LivereTower === 'function') { return; }
+
+			j = d.createElement(s);
+			j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+			j.async = true;
+
+			e.parentNode.insertBefore(j, e);
+		})(document, 'script');
+	</script>
+	<noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
 {% endif %}
