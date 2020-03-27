@@ -56,6 +56,10 @@
     <div class="post__content">
         {{ render(page.content) }}
 
+        {% if config.liker.enable}
+        <iframe class="LikeCoin" height="235" src="https://button.like.co/in/embed/{{ config.liker.id }}/button?referrer={{ config.url }}{{ url_for(page.path) }}" width="100%" frameborder=0></iframe>
+        {% endif %}
+
         {% if page.editor %}
         <div class="post-announce">
             {{ __('copyright_statement.one') }}
