@@ -7,7 +7,7 @@
 
     <form id="page-search-from" class="page__search-from" action="/search/">
         <label class="search-form__item">
-            <input class="input" type="text" name="search" placeholder="Search...">
+            <input class="input" type="text" name="search" placeholder="搜索">
             <i class="iconfont icon-search"></i>
         </label>
     </form>
