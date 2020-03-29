@@ -28,8 +28,8 @@
             {% include './_partial/common/footer.swig' %}
         {% endblock %}
 
-        {% block backTop %}
-            {% include './_partial/common/back-top.swig' %}
+        {% block hover-button %}
+            {% include './_partial/common/hover-button.swig' %}
         {% endblock %}
     </div>
 
@@ -39,7 +39,7 @@
         <script type="text/javascript" src="js/common/animation.js"></script>
         <script type="text/javascript" src="js/layout/loading.js"></script>
         <script type="text/javascript" src="js/layout/header.js"></script>
-        <script type="text/javascript" src="js/layout/back-top.js"></script>
+        <script type="text/javascript" src="js/layout/hover-button.js"></script>
         <script type="text/javascript" src="js/layout/post.js"></script>
     <!-- endbuild -->
 
