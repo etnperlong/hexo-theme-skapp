@@ -45,7 +45,7 @@
 
     {% block pagejs %}
         <!-- 简繁转换系统 -->
-        <script type="text/javascript" src=’https://oyyd.github.io/wasm-opencc/opencc-asm.js’></script>
+        <script type="text/javascript" src="https://oyyd.github.io/wasm-opencc/opencc-asm.js"></script>
         <script type="text/javascript" src="/js/md5.min.js"></script>
     {% endblock %}
 
