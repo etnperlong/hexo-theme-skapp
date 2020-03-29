@@ -48,5 +48,8 @@
 <!-- RSS -->
 {{ feed_tag('atom.xml') }}
 
+<!-- 简繁转换 -->
+{% include './zh_trans.swig' %}
+
 <!-- 统计 -->
 {% include './analytics.swig' %}
