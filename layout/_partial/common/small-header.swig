@@ -2,6 +2,10 @@
 <header class="page__small-header page__header--small">
     <nav class="page__navbar">
         <div class="page__container navbar-container">
+            <button class="page__menu-btn" type="button">
+                <i class="iconfont icon-menu"></i>
+            </button>
+            
             <a class="page__logo" href="{{ url_for('/') }}" title="{{ get_setting('title') }}" alt="{{ get_setting('title') }}">
                 <img src="{{ get_setting('logo') }}" alt="{{ get_setting('title') }}">
             </a>
@@ -16,10 +20,6 @@
                     {% endfor %}
                 </ul>
             </nav>
-
-            <button class="page__menu-btn" type="button">
-                <i class="iconfont icon-menu"></i>
-            </button>
         </div>
     </nav>
 </header>
