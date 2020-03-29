@@ -2,9 +2,9 @@
     <div class="error-page__container">
         <div class="error-page__main">
             <h1 class="error-page__title">404</h1>
-            <h2 class="error-page__subtitle">OOPS! THIS PAGE CANNOT BE FOUND!</h2>
+            <h2 class="error-page__subtitle">啊噢！这个页面走丢啦！</h2>
             <p class="error-page__text">
-                But we have lots of other pages for you to see.
+                但这里还有更多其他不错的内容让你阅读
             </p>
             <ul class="social-network clearfix">
                 {% for item in site.data.contact %}
